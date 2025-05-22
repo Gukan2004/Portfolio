@@ -1,19 +1,31 @@
 import React from 'react';
+import './About.css';
+
 
 function About() {
   return (
-    <div className="about-page">
+    <section id="about" className="about-section">
       <h2>About Me</h2>
       <p>
-        I’m <strong>Gukanamashivayan S V</strong>, an aspiring AI & Data Science Engineer and Full Stack Developer.
-        I’m passionate about building intelligent systems, mobile apps, and IoT solutions.
-        I’ve worked on real-world projects involving Android development, automation, and blockchain.
+        I’m <strong>Gukanamashivayan S V</strong>, an aspiring AI & Data Science Engineer and Full Stack Developer passionate about building intelligent systems, mobile apps, and IoT solutions.
       </p>
       <p>
-        My goal is to contribute innovative ideas and build scalable tech solutions that make a difference.
-        I’m always eager to explore new technologies and learn by building.
+        I have experience in Android development, automation, and blockchain projects, working across frontend and backend technologies.
       </p>
-    </div>
+      <p>
+        I value innovation, scalability, and user-centric design, and I’m eager to contribute to impactful tech solutions while continuously learning new technologies.
+      </p>
+      <p>
+        <strong>Education:</strong> B.Tech in Artificial Intelligence and Data Science, Anna University Regional Campus, Coimbatore (2022–2026)
+      </p>
+
+      <div className="social-icons">
+        {/* Replace '#' with your actual links */}
+        <a href="mailto:gukanshiva39@gmail.com" aria-label="Email">📧</a>
+        <a href="https://github.com/Gukan2004" target="_blank" rel="noopener noreferrer" aria-label="GitHub">🐙</a>
+        <a href="https://www.linkedin.com/in/gukanamashivayansv" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">🔗</a>
+      </div>
+    </section>
   );
 }
 

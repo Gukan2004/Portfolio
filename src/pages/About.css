@@ -1,0 +1,93 @@
+/* About.css */
+
+.about-section {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 30px 25px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #2c3e50;
+  background: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+.about-section:hover {
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.about-section h2 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #34495e;
+  margin-bottom: 20px;
+  letter-spacing: 1.1px;
+  text-align: center;
+}
+
+.about-section p {
+  font-size: 1.15rem;
+  line-height: 1.6;
+  margin-bottom: 18px;
+  color: #555;
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about-section strong {
+  color: #2980b9;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 28px;
+}
+
+.social-icons a {
+  font-size: 2rem;
+  color: #2980b9;
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icons a:hover,
+.social-icons a:focus {
+  color: #1c5980;
+  transform: scale(1.2);
+  outline: none;
+}
+
+/* Animation keyframes */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 700px) {
+  .about-section {
+    padding: 25px 20px;
+  }
+
+  .about-section h2 {
+    font-size: 2.2rem;
+  }
+
+  .about-section p {
+    font-size: 1rem;
+  }
+
+  .social-icons a {
+    font-size: 1.6rem;
+  }
+}

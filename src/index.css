@@ -191,3 +191,66 @@ ul {
     gap: 15px;
   }
 }
+html {
+  scroll-behavior: smooth;
+}
+
+/* Make scrolling smooth for in-page anchors */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Main layout padding to avoid overlapping with fixed navbar */
+.main-content {
+  padding-top: 80px; /* Adjust based on actual navbar height */
+}
+
+/* Navbar styles to stay fixed at top */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  z-index: 1000;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo styling */
+.navbar-logo {
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: #333;
+}
+
+/* Navigation link layout */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+/* Link styling */
+.nav-links li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+/* Hover effect */
+.nav-links li a:hover {
+  color: #007bff;
+}
+/* Make sure each section has enough scroll margin below the fixed navbar */
+section {
+  scroll-margin-top: 75px; /* Adjust based on your navbar height */
+}
+
